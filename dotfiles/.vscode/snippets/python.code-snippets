@@ -1,0 +1,35 @@
+{
+	// TIMEIT 
+	"timeit.repeat": {
+		"scope": "python",
+		"body": [
+			"arg = ",
+			"import timeit",
+			"time_list = timeit.repeat(lambda: $function_name(arg))",
+			"print('Time list: ', time_list)",
+			"print('Average execution value: ', sum(time_list) / len(time_list))",
+		],
+		"description": "Use to print list and average value of execution time"
+	},
+	// FILES
+	"file.listFiles": {
+		"prefix": "listFiles",
+		"body": "for item in os.listdir(\"${1:path/*.py}\"):  # import os\n\t# Comment: $0\n\tprint(item)\n# end file item",
+		"description": "List files in that path"
+	},
+	"file.openFileAsRead": {
+		"prefix": "openFile",
+		"body": "with open('${1:pyfile.txt}', '${2:r}') as f:\n\t# Comment: $0\n\tprint(f.read())\n# end open file",
+		"description": "open a file in read mode"
+	},
+	"file.appendFile": {
+		"prefix": "appendFile",
+		"body": "with open('${1:pyfile.txt}', '${2:a}') as f:\n\t# Comment: $0\n\tf.write(${2:\"text here\"})\n# end append file",
+		"description": "write to an Existing File"
+	},
+	"file.deleteFile": {
+		"prefix": "deleteFile",
+		"body": "import os\nif os.path.isfile('${1:pyfile.txt}'):\n\t# Comment: $0\n\tos.remove('${1:pyfile.txt}')  # import os\n# end if del-file",
+		"description": "delete a file"
+	}
+}

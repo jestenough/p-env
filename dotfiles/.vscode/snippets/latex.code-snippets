@@ -1,0 +1,197 @@
+{
+    "Create theorem": {
+        "prefix": "theorem",
+        "body": [
+            "\\begin{theorem}[$1]",
+            "\\label{thrm:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "\\end{theorem}"
+        ],
+        "description": "Creates a basic theorem block."
+    },
+    "Create lemma": {
+        "prefix": "lemma",
+        "body": [
+            "\\begin{lemma}[$1]",
+            "\\label{lemma:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "\\end{lemma}"
+        ],
+        "description": "Creates a basic lemma block."
+    },
+    "Create definition": {
+        "prefix": "definition",
+        "body": [
+            "\\begin{definition}[$1]",
+            "\\label{def:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "\\end{definition}"
+        ],
+        "description": "Creates a basic definition block."
+    },
+    //  Sectioning:
+    "Create section": {
+        "prefix": "sec",
+        "body": [
+            "\\section{$1}",
+            "\\label{sec:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "% section ${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm} (end)"
+        ],
+        "description": "Creates a new section block."
+    },
+    "Create subsection": {
+        "prefix": "subsec",
+        "body": [
+            "\\subsection{$1}",
+            "\\label{subsec:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "% subsection ${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm} (end)"
+        ],
+        "description": "Creates a new subsection block."
+    },
+    "Create subsubsection": {
+        "prefix": "subsubsec",
+        "body": [
+            "\\subsubsection{$1}",
+            "\\label{subsubsec:${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm}}",
+            "$0",
+            "% subsubsection ${1/([^\\w]+)|([\\w]+)/${1:+_}${2:/downcase}/gm} (end)"
+        ],
+        "description": "Creates a new subsection block."
+    },
+    "Create proof": {
+        "prefix": "proof",
+        "body": [
+            "\\begin{proof}",
+            "$0",
+            "\\end{proof}"
+        ],
+        "description": "Creates a new proof block."
+    },
+    "Create array": {
+        "prefix": "array",
+        "body": [
+            "\\begin{array}{lll}",
+            "\t $0",
+            "\\end{array}"
+        ],
+        "description": "Creates a new array block."
+    },
+    // Items:
+    "Create itemize": {
+        "prefix": "item",
+        "body": [
+            "\\begin{itemize}",
+            "\\item $0",
+            "\\end{itemize}"
+        ],
+        "description": "Creates a new itemize block."
+    },
+    "Create enumerate item": {
+        "prefix": "enum",
+        "body": [
+            "\\begin{enumerate}[label=\\roman*.]",
+            "\\item $0",
+            "\\end{enumerate}"
+        ],
+        "description": "Creates a new enumitem block."
+    },
+    "Create begin": {
+        "prefix": "begin",
+        "body": [
+            "\\begin{$1}",
+            "\t $0",
+            "\\end{$1}"
+        ],
+        "description": "Creates a new begin block."
+    },
+    "Create center": {
+        "prefix": "center",
+        "body": [
+            "\\begin{center}",
+            "\t $0",
+            "\\end{center}"
+        ],
+        "description": "Creates a new center block."
+    },
+    "Create math": {
+        "prefix": "math",
+        "body": [
+            "\\begin{math}",
+            "\t $0",
+            "\\end{math}"
+        ],
+        "description": "Creates a new math block."
+    },
+    "New \\[": {
+        "prefix": "\\[",
+        "body": [
+            "\\[",
+            "\t $0",
+            "\\]"
+        ],
+        "description": "Creates a new \\[ \\] math block."
+    },
+    // Diagrams Snippets:
+    "Create diagram": {
+        "prefix": "\\diagram",
+        "body": [
+            "\\[",
+            "\t \\bfig",
+            "\t \t $0",
+            "\t \\efig",
+            "\\]"
+        ],
+        "description": "Creates a new diagram block."
+    },
+    "Create square diagram": {
+        "prefix": "\\square",
+        "body": [
+            "\\square(0,0)|amma|/->`->`->`->/<500,500>[",
+            "\t A`",
+            "\t B`",
+            "\t C`",
+            "\t D;",
+            "\t f`",
+            "\t g`",
+            "\t h`",
+            "\t i",
+            "]"
+        ],
+        "description": "Creates a new square diagram."
+    },
+    "Create Atriangle diagram": {
+        "prefix": "\\Atriangle",
+        "body": [
+            "\\Atriangle(0,0)|mmm|/->`->`->/<500,500>[",
+            "\t A`",
+            "\t B`",
+            "\t C;",
+            "\t f`",
+            "\t g`",
+            "\t h",
+            "]"
+        ],
+        "description": "Creates a new Atriangle diagram."
+    },
+    // Inference rule snippets:
+    "Create inference rule": {
+        "prefix": "\\infer",
+        "body": [
+            "\\inferrule* [flushleft,right=$1] {",
+            "\t $2",
+            "}{$0}"
+        ],
+        "description": "Creates a new inference rule."
+    },
+    "Create mathpar block": {
+        "prefix": "\\mathpar",
+        "body": [
+            "\\begin{mathpar}",
+            "\t $0",
+            "\\end{mathpar}"
+        ],
+        "description": "Creates a new mathpar block."
+    },
+}

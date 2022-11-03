@@ -1,0 +1,13 @@
+[core]
+	editor = vim
+	autocrlf = input
+
+[color]
+	ui = true
+
+[user]
+	name = Vyacheslav Dmitriev
+	email = rtefforg@gmail.com
+
+[diff]
+    tool = vimdiff

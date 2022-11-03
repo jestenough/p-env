@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "always",
+
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.mouseWheelZoom": false,
+    "editor.cursorStyle": "underline",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.links": false,
+
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.enableBell": false,
+
+    "telemetry.enableTelemetry": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    
+    "extensions.ignoreRecommendations": true,
+    "github.gitAuthentication": false,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/.svn": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+}
