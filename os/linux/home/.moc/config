@@ -1,0 +1,29 @@
+MusicDir = ~/Music/
+MOCDir = ~/.moc
+StartInMusicDir = yes
+ReadTags = yes
+Sort = FileName
+ShowStreamErrors = yes
+Repeat = no
+Shuffle = no
+AutoNext = yes
+FormatString = "%(n:%n :)%(a:%a - :)%(t:%t:)%(A: \(%A\):)"
+
+SoundDriver = ALSA:JACK:OSS
+ALSADevice = default
+ALSAMixer1 = PCM
+ALSAMixer2 = Master
+ALSAStutterDefeat = no
+Softmixer_SaveState = yes
+Equalizer_SaveState = yes
+
+ShowHiddenFiles = no
+HideFileExtension = no
+ShowFormat = yes
+ShowTime = yes
+ShowTimePercent = yes
+Theme = ~/.moc/themes/personal_theme
+Precache = yes
+SavePlaylist = yes
+SyncPlaylist = yes
+FollowPlayedFile = no
