@@ -1,9 +1,12 @@
 {
+    "window.zoomLevel": 0.7,
+
     "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 10,
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.welcome.enabled": false,
 
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
@@ -23,14 +26,31 @@
 
     "telemetry.enableTelemetry": false,
     "update.enableWindowsBackgroundUpdates": false,
-    
+
     "extensions.ignoreRecommendations": true,
     "github.gitAuthentication": false,
+
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "black",
+    "python.analysis.autoImportCompletions": false,
+
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.startOnNewLine": true,
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[yaml]":  {
+        "editor.tabSize": 2
+    },
 
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
         "**/__pycache__": true,
+        "**/.pytest_cache": true,
         "**/.svn": true,
         "**/bin": true,
         "**/obj": true
