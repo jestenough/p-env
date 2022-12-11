@@ -22,6 +22,17 @@ function New-File() {
     }
 }
 
+function Get-ProgramLocationPath {
+    foreach ($program in $args) {
+        if (Get-Command $program -ErrorAction SilentlyContinue) {
+            Write-Output (Get-Command $program).Path
+        }
+        else {
+            Write-Host "Program '$program' not found" -ForegroundColor Red
+        }
+    }
+}
+
 
 #                  Docker + Django func
 # ---------------------------------------------------------
@@ -47,6 +58,7 @@ function New-DockerDjangoShellPlus {
 # ---------------------------------------------------------
 Set-Alias -Name c -Value clear
 Set-Alias -Name Touch New-File
+Set-Alias -Name Which Get-ProgramLocationPath
 
 Set-Alias -Name dj-migrations New-DockerDjangoMigrations
 Set-Alias -Name dj-migrate New-DockerDjangoMigrate
