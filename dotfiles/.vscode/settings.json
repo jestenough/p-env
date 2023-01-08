@@ -19,6 +19,7 @@
     "editor.minimap.enabled": false,
     "editor.links": false,
 
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": false,
@@ -30,13 +31,58 @@
     "extensions.ignoreRecommendations": true,
     "github.gitAuthentication": false,
 
+    "python.analysis.autoImportCompletions": false,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "black",
-    "python.analysis.autoImportCompletions": false,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django",
+        "--django-settings-module=core.settings",
+        "--max-line-length=120"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+
+    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.integratedConsole.showOnStartup": false,
 
     "autoDocstring.docstringFormat": "numpy",
     "autoDocstring.startOnNewLine": true,
+
+    "background.useDefault": false,
+    "background.fullscreen": {
+        "image": "file:///T:/docs/pic/Wallpapers/IvDUB3h.png",
+        "opacity": 0.90,
+        "size": "cover",
+        "position": "center",
+        "interval": 0
+    },
+
+    "thunder-client.requestLayout": "Top/Bottom",
+    "thunder-client.sidebar.hideDateModified": true,
+    
+    "todo-tree.general.statusBar": "total",
+    "todo-tree.general.tags": [
+        "BUG",
+
+        "HACK",
+
+        "FIX",
+        "FIXME",
+        "FIXIT",
+
+        "TODO",
+    ],
+    "todo-tree.general.tagGroups": {
+        "BUG": ["BUG"],
+        "FIX": ["FIX", "FIXME", "FIXIT"],
+        "TODO": ["TODO"]
+    },
+    "todo-tree.tree.groupedByTag": true,
+    
 
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -48,7 +94,6 @@
 
     "files.exclude": {
         "**/.git": true,
-        "**/.DS_Store": true,
         "**/__pycache__": true,
         "**/.pytest_cache": true,
         "**/.svn": true,
