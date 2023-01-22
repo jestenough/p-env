@@ -8,10 +8,16 @@ function Install-Apps {
     scoop install 7zip -g
     scoop install gource
     scoop install openssh
+    scoop install ngrok
+    scoop install winscp
+    scoop install kitty
+    scoop install workrave
+    scoop install cpu-z
 
     # Programming languages
     scoop install python
     scoop install openjdk
+    scoop install nodejs
 
     # etc.
     scoop install transmission
@@ -28,12 +34,14 @@ function Install-Apps {
 
     # Programming
     scoop install git -g
+    scoop install gcc
     scoop install vscode
     scoop install draw.io
     scoop install zeal
     scoop install docker
     scoop install heroku-cli
     scoop install postman
+    scoop install dbeaver
 
     # Books
     scoop install jabref
