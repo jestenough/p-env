@@ -1,5 +1,8 @@
+[init]
+    defaultbranch = master
+
 [core]
-	editor = vim
+	editor = nvim
 	autocrlf = input
 
 [color]
@@ -7,7 +10,15 @@
 
 [user]
 	name = Vyacheslav Dmitriev
-	email = rtefforg@gmail.com
+	email = rtefforg@users.noreply.github.com
 
 [diff]
     tool = vimdiff
+
+[merge]
+    tool = vimdiff
+
+[alias]
+    st = status
+    co = checkout
+    fa = fetch --prune --all
