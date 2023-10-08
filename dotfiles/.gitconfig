@@ -1,24 +1,22 @@
 [init]
-    defaultbranch = master
+	defaultbranch = master
 
 [core]
-	editor = nvim
+	editor = vim
 	autocrlf = input
-
-[color]
-	ui = true
 
 [user]
 	name = Vyacheslav Dmitriev
-	email = rtefforg@users.noreply.github.com
+	email = rtefforg@gmail.com
 
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 
 [alias]
-    st = status
-    co = checkout
-    fa = fetch --prune --all
+	st = status
+	co = checkout
+	fa = fetch --prune --all
+	count = !git shortlog -sn
