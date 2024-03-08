@@ -13,11 +13,7 @@ function Install-Apps {
     scoop install kitty
     scoop install workrave
     scoop install cpu-z
-
-    # Programming languages
-    scoop install python
-    scoop install openjdk
-    scoop install nodejs
+    scoop install exiftool
 
     # etc.
     scoop install transmission
